@@ -1,5 +1,9 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
+	# Force https on all traffic
+	RewriteCond %{SERVER_PORT} 80
+	RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+	
     # May be required to access sub directories
     #RewriteBase /
 
