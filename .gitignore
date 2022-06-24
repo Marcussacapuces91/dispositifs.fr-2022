@@ -13,5 +13,5 @@ desktop.ini
 # Composer
 /composer.phar
 /vendor
-/composer.lock
+composer.lock
 
