@@ -31,6 +31,9 @@
         "picocms/pico-deprecated": "^2.1",
         "picocms/composer-installer": "^1.0"
     },
+	"config": {
+		"allow-plugins": true
+	},
     "minimum-stability": "beta",
     "prefer-stable": true
 }
