@@ -54,6 +54,8 @@ plugins_url: ~                      # Pico will try to guess the URL to the plug
                                     #     If this fails, override it here. Example: https://example.com/pico/plugins/
 DummyPlugin.enabled: false          # Force the plugin "DummyPlugin" to be disabled
 
+PicoForm2Mail.enabled: true
+
 ##
 # Custom
 #
