@@ -10,6 +10,7 @@
   <head>
 
     <title>{{ site_title }}</title>
+	<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -130,6 +131,7 @@
                       <div class="12u$">
                         <textarea name="message" placeholder="Message" rows="8"></textarea>
                       </div>
+                      <div class="h-captcha" data-sitekey="f8ea759d-1652-42ed-8a1e-3bef82a9fa3f"></div>
                       <div class="12u$">
                         <input type="submit" value="Envoyer..." name="send_email" />
                       </div>
@@ -146,7 +148,7 @@
       <!-- Footer -->
       <div id="footer">
         <ul class="copyright">
-          <li>{{ site_title }} &copy; M. Sibert 2022</li>
+          <li>Copyright &copy; {{ site_title }} 2022 M. SIBERT</li>
 		  <li>Propulsé par <a href="https://picocms.org/">PicoCMS</a></li>
 		  <li>Rendu par <a href="http://html5up.net">HTML5 UP</a></li>
         </ul>
