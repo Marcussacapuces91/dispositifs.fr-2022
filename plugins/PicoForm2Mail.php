@@ -6,7 +6,15 @@ class PicoForm2Mail extends AbstractPicoPlugin
 	function onRequestUrl($url) {
 		if (isset($_POST['send_email'])) {
 
+/**
+ * Placer un fichier secret.php à la racine du site contenant les valeurs de deux variables locales :
+ * $secret
+ * $site_key
+ * Contenant les valeurs données par le site hcaptcha.com
+ */
 			include($_SERVER['DOCUMENT_ROOT']."/secret.php");
+			
+			
 
 			$token = $_POST['h-captcha-response'];
 			$remote = $_SERVER['REMOTE_ADDR'];
